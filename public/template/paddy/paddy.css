@@ -1,0 +1,641 @@
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.title-3 {
+  font-size: 24px;
+  color: #198754;
+  font-weight: 600;
+  position: relative;
+}
+
+.link-3 {
+  font-size: 14px;
+  color: #198754 !important;
+  margin-right: 20px !important;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.link-3:hover {
+  font-size: 14px;
+  color: black !important;
+  font-weight: 400 !important;
+}
+
+.card-2 {
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  padding: 8px 8px 16px 8px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+  border: 1px #f3f3f3 solid;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.card-2:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.card-2:hover .card-2__title {
+  color: #219653;
+}
+
+.card-2:hover .card-2__wrapper-img img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.card-2__wrapper-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-2__wrapper-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.card-2__title {
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text
+vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide-1,
+.swiper-silde-2 {
+  background: #fff !important;
+}
+
+.swiper-silde-2 {
+  width: 300px !important;
+  height: 100% !important;
+}
+
+.swiper-wrapper-1 {
+  height: 600px !important;
+}
+
+.swiper-wrapper-2 {
+  height: 350px !important;
+}
+
+.swiper-button-next-1,
+.swiper-button-next-2 {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  border: 1px rgba(0, 0, 0, 0.075) solid;
+  position: absolute;
+  top: 505;
+  right: -50px;
+}
+
+.swiper-button-next-1:focus,
+.swiper-button-next-2:focus {
+  outline: none !important;
+}
+
+.swiper-button-next-1::after,
+.swiper-button-next-2::after {
+  margin-left: 5px;
+  color: black;
+  font-size: 24px;
+}
+
+.swiper-button-next-1:hover::after,
+.swiper-button-next-2:hover::after {
+  font-weight: 600;
+}
+
+.swiper-button-prev-1,
+.swiper-button-prev-2 {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  border: 1px rgba(0, 0, 0, 0.075) solid;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+}
+
+.swiper-button-prev-1:focus,
+.swiper-button-prev-2:focus {
+  outline: none !important;
+}
+
+.swiper-button-prev-1::after,
+.swiper-button-prev-2::after {
+  margin-left: -3px;
+  color: black;
+  font-size: 24px;
+}
+
+.swiper-button-prev-1:hover::after,
+.swiper-button-prev-2:hover::after {
+  font-weight: 600;
+}
+
+.container-1:before {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100px !important;
+  height: 3px !important;
+  background: #000 !important;
+}
+
+.my-banner {
+  width: 700px;
+  height: 100vh;
+  position: relative;
+}
+
+.my-banner .breadcrumb {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #000;
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.my-banner .breadcrumb-item a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.my-banner .active {
+  text-decoration: underline !important;
+  font-weight: 500;
+  color: #000;
+}
+
+.my-banner__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 90px;
+  font-family: "Taviraj", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.my-banner__crop {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 600px;
+  height: 550px;
+  background: #f8f9fa;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.my-banner__crop img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.my-banner__crop:hover img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+a {
+  color: black !important;
+}
+
+.menu-header a {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+.menu-header a:hover {
+  background: #f3f3f3 !important;
+}
+
+.item--menu,
+.menu-children-lv3 li,
+.menu-children-lv2 li {
+  background: #fff !important;
+}
+
+.title-2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #198754;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.card-3 {
+  width: 900px;
+  height: 500px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.card-3:hover {
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.card-3:hover .card-3__left .card-3__left-img img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.card-3__number {
+  font-size: 150px;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  z-index: 2;
+}
+
+.card-3__left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.card-3__left-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-3__left-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.card-3__left-img .card-3__left-layer {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card-3__right {
+  width: 40%;
+  height: 100%;
+}
+
+.card-3__right-title p {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #198754;
+  margin-bottom: 0 !important;
+}
+
+.card-3__right-des {
+  color: black;
+  font-weight: 600;
+}
+
+.card-3__right-des .hidden {
+  width: 100%;
+  height: 130px;
+  padding: 10px 10px 10px 0;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.card-3__right-des .show-more {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #198754 !important;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #198754;
+}
+
+.card-3__right-des .show-more svg {
+  margin-left: 10px;
+  fill: #198754;
+  width: 11px;
+  height: 11px;
+}
+
+.open {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+}
+
+.content__left {
+  width: 25%;
+  padding: 8px 16px;
+  position: relative;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.content__left-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px !important;
+  margin-left: 11px;
+  margin-top: 20px;
+}
+
+.content__left-menu {
+  width: 100%;
+  background: #fff;
+}
+
+.content__left-divider {
+  width: 90%;
+  height: 3px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+.content__right {
+  width: 75%;
+  padding-left: 55px;
+}
+
+.content__right-title {
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  color: #198754;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.content__right-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 20%;
+  height: 2px;
+  background: #c4c4c4;
+}
+
+.panel-heading a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.panel-title {
+  width: 90%;
+  height: 50px;
+  padding: 7px 24px;
+  background: #f3f3f3;
+  margin: 0 auto;
+}
+
+.panel-title a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.panel-title a svg {
+  float: right;
+  margin-top: 15px;
+  width: 11px;
+  height: 11px;
+}
+
+.panel-body ul {
+  list-style: none;
+  margin-left: 19px;
+}
+
+.panel-body ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: black;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+.panel-body ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+}
+
+.panel-group {
+  margin-bottom: 30px !important;
+}
+
+.panel-group .show-more-1 {
+  margin-top: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #198754 !important;
+}
+
+.panel-group .show-more-1 svg {
+  margin-left: 10px;
+  fill: #198754;
+  width: 11px;
+  height: 11px;
+}
+
+.title-1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #198754;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.des-1 {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.footer-container-fluid {
+  height: 60vh;
+  background: #f3f3f3;
+  padding-top: 50px;
+}
+
+.my-list-item p {
+  text-transform: lowercase;
+  font-size: 13px;
+  padding: 8px 16px;
+  background: transparent !important;
+  margin-bottom: 0 !important;
+  color: black;
+}
+
+.my-list-item p span {
+  margin-right: 15px;
+}
+
+.my-list-item:hover {
+  text-decoration: underline;
+}
+
+.list-active p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent !important;
+}
+
+.list-group-item {
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.list-group-item:hover {
+  background: #fff !important;
+}
+
+.my-list-group {
+  padding: 0 20px !important;
+  margin-top: 20px !important;
+}
+
+.footer-domain {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 300;
+  margin-right: 50px;
+}
+
+.logo-footer {
+  background: #fff;
+  height: 80%;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.logo-footer img {
+  margin-top: 50% !important;
+}
+
+.btn-map {
+  width: 500px;
+  border: 1px black solid;
+  background-color: #fff;
+  font-size: 13px;
+  padding: 16px 0 !important;
+}
+
+.map-modal-content {
+  width: 1100px !important;
+  height: 600px !important;
+}
+
+.map-modal-dialog {
+  position: absolute !important;
+  top: 45% !important;
+  left: 30% !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+}
+/*# sourceMappingURL=paddy.css.map */

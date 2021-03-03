@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.my-banner {
+  width: 700px;
+  height: 110vh;
+  position: relative;
+  margin-bottom: 50vh;
+  margin-top: 50vh;
+}
+
+.my-banner .breadcrumb {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.my-banner .breadcrumb-item a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.my-banner .active {
+  text-decoration: underline !important;
+  color: #000;
+}
+
+.my-banner__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 90px;
+  font-family: "Taviraj", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.my-banner__cpseed {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #000;
+  z-index: 2;
+}
+
+.my-banner__cpseed::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 50px;
+  height: 2px;
+  background: black;
+}
+
+.my-banner__crop {
+  position: absolute;
+  bottom: 9%;
+  left: 50px;
+  width: 600px;
+  height: 550px;
+  background: #f8f9fa;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.my-banner__crop img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0px -100px;
+     object-position: 0px -100px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.my-banner__crop:hover img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+a {
+  color: black !important;
+}
+
+.item--menu,
+.menu-children-lv3 li,
+.menu-children-lv2 li {
+  background: #fff !important;
+}
+/*# sourceMappingURL=banner.css.map */
