@@ -1,4 +1,5 @@
- @extends('content.introducton.introduction_main')
+@extends('mainlayout.category_layout.menu_layout')
+
 @section('page')
 <div class="container position-relative mt-5">
       <div class="title-2 position-relative" style="margin-left: 110px">

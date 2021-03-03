@@ -22,8 +22,10 @@ class HomeController extends Controller
     	$menuLimit=Menu::where('parent_id',0)->get();
     	return view('content.introducton.category_page.category_page',compact('sliders','menuLimit','products'));
     }
-	public function gioi_thieu_chung(){
-		return view('introduce.introduce');
+	public function gioi_thieu(){
+        $sliders =Slider::latest()->get();
+        $menuLimit=Menu::where('parent_id',0)->get();
+		return view('content.introducton.general_introduction',compact('sliders','menuLimit'));
 	}
    
 }

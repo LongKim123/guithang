@@ -62,7 +62,7 @@ Route::post('/paypal','CheckoutController@paypal');
 Route::get('/paypal/return',[\App\Http\Controllers\CheckoutController::class,'paypalReturn'])->name('paypal_return');
 Route::get('/paypal/cancel',[\App\Http\Controllers\CheckoutController::class,'paypalCancel'])->name('paypal_cancel');
 
-Route::get('gioi-thieu-chung','HomeController@gioi_thieu_chung');
+Route::get('gioi-thieu','HomeController@gioi_thieu');
 
 
 

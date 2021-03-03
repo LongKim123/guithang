@@ -1,4 +1,4 @@
- @extends('content.introducton.introduction_main')
+@extends('mainlayout.category_layout.menu_layout')
 @section('tittle')
 <title>Detail_product</title>
 @endsection
