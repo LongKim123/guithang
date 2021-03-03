@@ -1,0 +1,55 @@
+.card-4-card-title {
+  text-decoration: none;
+  text-align: start;
+  color: black;
+  font-size: 16px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.crop {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.card-4 {
+  padding: 8px;
+}
+
+.card-4:hover .crop img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.card-4:hover .card-4-card-title {
+  color: green;
+}
+
+.card-4-tag {
+  padding: 6px 12px;
+  font-size: 11px;
+  background: green;
+  border: none;
+  margin-top: 20px;
+}
+
+.card-4-tag:hover {
+  background: #c4c4c4;
+  color: black;
+  font-weight: 600;
+}
+
+.card-4 .text-muted {
+  font-size: 13px;
+  float: right;
+  margin-top: 22px;
+}
+/*# sourceMappingURL=card-4.css.map */

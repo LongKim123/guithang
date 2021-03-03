@@ -1,0 +1,50 @@
+.card-2 {
+  width: 300px;
+  height: 300px;
+  padding: 8px 8px 16px 8px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.card-2:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-2:hover .card-2__title {
+  font-size: 15px;
+}
+
+.card-2:hover .card-2__wrapper-img img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.card-2__wrapper-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-2__wrapper-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.card-2__title {
+  font-size: 13px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+/*# sourceMappingURL=card-2.css.map */

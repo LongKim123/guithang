@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- my css -->
+    <link
+      href="../../superfish/css/superfish.css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="../../swiper/thumbs-gallery/thumbs-gallery.css"
+    />
+    <link rel="stylesheet" href="../../header/introduce.css" />
+
+    <link rel="stylesheet" href="./detail.css" />
+    <title>Menu</title>
+  </head>
+
+  <body>
+    <!-- <div class="container-fluid">
+      <div class="d-flex flex-row bd-highlight justify-content-between">
+        <div class="p-2 bd-highlight">
+          <div
+            class="p-2 bd-highlight footer-1-wrap__logo-1 shadow d-flex flex-column align-items-center justify-content-center"
+          >
+            <svg
+              height="55px"
+              viewBox="0 -107 512 511"
+              width="55px"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m255 .5c-7.089844 6.980469-17.34375 18.109375-27.464844 32.742188-8.722656 12.609374-15.832031 25.507812-21.332031 38.640624 19.625 13.980469 36.410156 30.628907 49.792969 49.472657 13.265625-18.675781 29.875-35.199219 49.277344-49.097657-5.753907-13.425781-13.203126-26.582031-22.347657-39.410156-10.328125-14.484375-20.742187-25.46875-27.925781-32.347656zm0 0"
+              />
+              <path
+                d="m260.324219 296.066406c9.097656-1.484375 23.320312-4.597656 39.359375-11 36.109375-14.414062 64.078125-37.917968 83.128906-69.863281 36.15625-60.632813 24.257812-126.785156 17.144531-153.277344-9.679687 2.296875-24.222656 6.5-40.460937 13.769531-38.035156 17.019532-67.054688 41.976563-86.253906 74.167969-19.046876 31.945313-26.433594 67.722657-21.953126 106.347657 1.992188 17.144531 6.011719 31.136718 9.035157 39.855468zm0 0"
+              />
+              <path
+                d="m42.199219 139.199219c-17.753907 1.175781-32.570313 4.261719-42.199219 6.757812 2.210938 9.691407 6.292969 24.269531 13.421875 40.570313 16.695313 38.179687 41.398437 67.410156 73.425781 86.882812 25.121094 15.273438 52.992188 23.285156 82.867188 23.871094-27.425782-16.699219-50.015625-39.320312-66.335938-66.691406-16.128906-27.046875-25.714844-58.035156-28.355468-91.132813-10.617188-.898437-21.5625-1-32.824219-.257812zm0 0"
+              />
+              <path
+                d="m112.042969 61.925781c-2.582031 9.609375-5.792969 24.398438-7.117188 42.140625-3.101562 41.550782 5.058594 78.941406 24.257813 111.136719 19.050781 31.941406 47.019531 55.449219 83.128906 69.863281 5.199219 2.074219 10.1875 3.785156 14.890625 5.226563-2.191406-8.375-4.261719-18.296875-5.613281-29.402344-4.738282-38.941406 1.273437-76.824219 17.402344-110.617187-.082032-.136719-.160157-.273438-.242188-.410157-19.199219-32.195312-48.214844-57.148437-86.25-74.167969-16.238281-7.265624-30.777344-11.472656-40.457031-13.769531zm0 0"
+              />
+              <path
+                d="m512 145.957031c-9.625-2.496093-24.449219-5.582031-42.207031-6.757812-11.261719-.742188-22.207031-.648438-32.824219.253906-2.640625 33.09375-12.222656 64.089844-28.355469 91.136719-16.320312 27.367187-38.914062 49.992187-66.335937 66.691406 29.878906-.585938 57.753906-8.601562 82.867187-23.871094 60.324219-36.675781 80.75-100.710937 86.855469-127.453125zm0 0"
+              />
+            </svg>
+            <p>Cp Seed</p>
+          </div>
+        </div>
+        <div class="p-2 bd-highlight">
+          <div class="menu-header">
+            <ul class="sf-menu">
+              <li class="item--menu">
+                <a class="item--menu-1" href="/vi/gioi-thieu/">Giới thiệu</a>
+                <ul class="menu-children-lv2 mt-3">
+                  <li class="">
+                    <a href="/vi/gioi-thieu/gioi-thieu-chung/"
+                      >Giới thiệu chung</a
+                    >
+                    <ul class="menu-children-lv3">
+                      <li class="">
+                        <a
+                          href="/vi/gioi-thieu/gioi-thieu-chung/lich-su-phat-trien/"
+                          >Lịch sử phát triển</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          href="/vi/gioi-thieu/gioi-thieu-chung/tam-nhin-su-menh/"
+                          >Tầm nhìn - Sứ mệnh</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          href="/vi/gioi-thieu/gioi-thieu-chung/linh-vuc-kinh-doanh-chinh/"
+                          >Lĩnh vực kinh doanh chính</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/chien-luoc-phat-trien/"
+                      >Chiến lược phát triển</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/danh-hieu-va-giai-thuong/"
+                      >Danh hiệu và Giải thưởng</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/doi-tac/">Đối tác</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/thong-tin-doanh-nghiep/"
+                      >Thông tin doanh nghiệp</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/co-cau-to-chuc/">Cơ cấu tổ chức</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/nhan-su-chu-chot/"
+                      >Nhân sự chủ chốt</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/cong-ty-thanh-vien/"
+                      >Công ty thành viên</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/gioi-thieu/van-hoa-vinaseed/"
+                      >Văn hoá Vinaseed</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="item--menu">
+                <a class="item--menu-1" href="/vi/linh-vuc-kinh-doanh/"
+                  >Lĩnh vực kinh doanh</a
+                >
+                <ul class="menu-children-lv2">
+                  <li class="">
+                    <a href="/vi/linh-vuc-kinh-doanh/giong-cay-trong/"
+                      >Giống cây trồng</a
+                    >
+                    <ul class="menu-children-lv3">
+                      <li class="">
+                        <a
+                          href="/vi/linh-vuc-kinh-doanh/giong-cay-trong/giong-lua/"
+                          >Giống lúa</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          href="/vi/linh-vuc-kinh-doanh/giong-cay-trong/giong-ngo/"
+                          >Giống ngô</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          href="/vi/linh-vuc-kinh-doanh/giong-cay-trong/giong-rau-qua/"
+                          >Giống rau quả</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="/vi/linh-vuc-kinh-doanh/nong-san-an-toan/"
+                      >Nông sản an toàn</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      href="/vi/linh-vuc-kinh-doanh/vat-tu-va-dich-vu-nong-nghiep/"
+                      >Vật tư và dịch vụ nông nghiệp</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="item--menu">
+                <a class="item--menu-1" href="/vi/quan-he-nha-dau-tu/"
+                  >Quan hệ nhà đầu tư</a
+                >
+                <ul class="menu-children-lv2">
+                  <li class="">
+                    <a href="/vi/quan-he-nha-dau-tu/thong-tin-tai-chinh/"
+                      >Thông tin tài chính</a
+                    >
+                    <ul class="menu-children-lv3">
+                      <li class="">
+                        <a
+                          href="/vi/quan-he-nha-dau-tu/thong-tin-tai-chinh/thong-tin-co-phieu/"
+                          >Thông tin cổ phiếu</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          href="/vi/quan-he-nha-dau-tu/thong-tin-tai-chinh/thong-tin-tai-chinh/"
+                          >Thông tin tài chính</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          href="/vi/quan-he-nha-dau-tu/thong-tin-tai-chinh/co-cau-so-huu/"
+                          >Cơ cấu sở hữu</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="/vi/quan-he-nha-dau-tu/bao-cao-tai-chinh/"
+                      >Báo cáo tài chính</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/quan-he-nha-dau-tu/dieu-le-cong-ty/"
+                      >Điều lệ công ty</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/quan-he-nha-dau-tu/dai-hoi-dong-co-dong/"
+                      >Đại hội đồng cổ đông</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/quan-he-nha-dau-tu/bao-cao-thuong-nien/"
+                      >Báo cáo thường niên</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/quan-he-nha-dau-tu/cong-bo-thong-tin/"
+                      >Công bố thông tin</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="item--menu">
+                <a class="item--menu-1" href="/vi/phat-trien-ben-vung/"
+                  >Phát triển bền vững</a
+                >
+                <ul class="menu-children-lv2">
+                  <li class="">
+                    <a href="/vi/phat-trien-ben-vung/chien-luoc/">Chiến lược</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/phat-trien-ben-vung/cam-ket/">Cam kết</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/phat-trien-ben-vung/bao-cao-pt-ben-vung/"
+                      >Báo cáo PT bền vững</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="item--menu menu-rotate-lf">
+                <a class="item--menu-1" href="/vi/truyen-thong/"
+                  >Truyền thông</a
+                >
+                <ul class="menu-children-lv2">
+                  <li class="">
+                    <a href="/vi/truyen-thong/tin-vinaseed/">Tin Vinaseed</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/truyen-thong/su-kien/">Sự kiện</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/truyen-thong/thu-vien/">Thư viện</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/truyen-thong/an-pham-doanh-nghiep/"
+                      >Ấn phẩm doanh nghiệp</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="item--menu menu-rotate-lf">
+                <a class="item--menu-1" href="/vi/r-d/">R&D</a>
+                <ul class="menu-children-lv2">
+                  <li class="">
+                    <a href="/vi/r-d/chien-luoc-r-d/">Chiến lược R&D</a>
+                  </li>
+                  <li class="">
+                    <a href="/vi/r-d/ban-nha-nong/">Bạn nhà nông</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item--menu menu-rotate-lf">
+                <a class="item--menu-1" href="/vi/tuyen-dung/">Tuyển dụng</a>
+                <ul class="menu-children-lv2">
+                  <li class="">
+                    <a href="/vi/tuyen-dung/thong-tin-tuyen-dung/"
+                      >Thông tin tuyển dụng</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/tuyen-dung/tai-sao-chon-vinaseed-/"
+                      >Tại sao chọn Vinaseed?</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/tuyen-dung/quy-trinh-tuyen-dung/"
+                      >Quy trình tuyển dụng</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="/vi/tuyen-dung/nop-ho-so-truc-tuyen/"
+                      >Nộp hồ sơ trực tuyến</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid container-fluid-home-banner">
+      <div class="d-flex flex-row bd-highlight home-banner">
+        <div class="p-3 bd-highlight home-banner-wrapper__big-img shadow">
+          <img
+            src="https://images.unsplash.com/photo-1574923222474-8880b616c88e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=388&q=80"
+            alt="logo"
+          />
+        </div>
+        <div class="p-2 bd-highlight home-banner-wrapper__small-img">
+          <img
+            src="https://images.unsplash.com/photo-1574923222474-8880b616c88e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=388&q=80"
+            alt="logo"
+            width="100px"
+          />
+        </div>
+        <div class="p-4 bd-highlight home-banner-wrapper__infor">
+          <p class="home-banner-wrapper__title text-uppercase">
+            Cung cấp giải pháp phát triển bền vững
+          </p>
+          <button
+            type="button"
+            class="btn btn-dark home-banner-wrapper__btn float-start"
+          >
+            Tìm hiểu các dòng sản phẩm
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark home-banner-wrapper__btn float-start"
+          >
+            Thông tin công ty
+          </button>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container" style="height: 500px">
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1488875482628-eee706cbfad5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1487139975590-b4f1dce9b035?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1505079403222-b5bbf1484f19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1488875482628-eee706cbfad5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1505079403222-b5bbf1484f19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1488875482628-eee706cbfad5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1487139975590-b4f1dce9b035?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1505079403222-b5bbf1484f19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1488875482628-eee706cbfad5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1488875482628-eee706cbfad5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper -->
+
+    <div class="container mt-2">
+      <p class="main-title">Lúa thuần</p>
+    </div>
+
+
+    <div class="container sptt" style="margin-top: 30px !important">
+      <p>SẢN PHẨM TƯƠNG TỰ</p>
+      <div class="d-flex flex-row flex-wrap bd-highlight">
+        <div class="p-2 bd-highlight slider-2 d-flex flex-column shadow">
+          <div class="bd-highlight slider-2__1">
+            <img
+              src="https://lh3.googleusercontent.com/lRkIatC9eyU5JvAufyuG-lmuZqO_v-NLeROb9nJUQ0JF6jmfWcSJxrxfDAlSvQxOIy9liouE5otByV0KNxJuXGk_yTdI9BTRjH6dfBfEYokzPSgb39y1qOiwBi9_2maC7COgO_vioXGebtjQY97Ue-zKTpXyfGGH-FEnCxGNteiEzX6xdpPe-90gKsbqOrKOJ2xdkLcsDUCaG5RY_LuMY-6BGzcUvD1vHtq7_DMxGFdw4ASoZ4n9OkB63gS9kI8W-acZSZtcTt4Tix-0cs0hHxXvqe58Ayvm3WuNgOy0bOZumn_H3_Um4xbxEsCPsFHCTVynjzIbZ8Ess5-sgtkHCm1tWYNJ7STvQBxwWeJ2aq1ec-VWs0tCGODP4n5ILPzgq_a7pTmdSwIudpEyqP6-InQe6sbIP1R84mrjHsLJzDDVd7kJmK4pceMNsNKZ7Wpo2T1rPAK8TdFnccomM4VmTwdmeojv00o46Li-Wm8Hj6-UyVIhYGilKcpH1p39RC_JJxJjQHUiumQLR0nct2zCCob3DqzWpdiF2xsV4tv5GhKD3spSWls4p9YYgM4Fzkn90IKZ8Q5KIlyM3f0o-KCjjmSlOjuhLeG4uIIA8xhM1Y7Ero7F8r-l0gcnS7v0KGbglVrm_xXDAyF5ic9YyGcfzqrcjf0w5OezcskNd8iH6T2Iz_2qNXFmK8FvsAw=w195-h150-no?authuser=0"
+              alt="test"
+            />
+          </div>
+          <div class="bd-highlight slider-2__2">
+            <p>Giống lúa thuần chất lượng Thiên ưu 8</p>
+          </div>
+
+          <div class="bd-highlight slider-2__3">
+            <a href="#">Thương hiệu giống cây trồng</a>
+          </div>
+        </div>
+        <div class="p-2 bd-highlight slider-2 d-flex flex-column shadow">
+          <div class="bd-highlight slider-2__1">
+            <img
+              src="https://lh3.googleusercontent.com/lRkIatC9eyU5JvAufyuG-lmuZqO_v-NLeROb9nJUQ0JF6jmfWcSJxrxfDAlSvQxOIy9liouE5otByV0KNxJuXGk_yTdI9BTRjH6dfBfEYokzPSgb39y1qOiwBi9_2maC7COgO_vioXGebtjQY97Ue-zKTpXyfGGH-FEnCxGNteiEzX6xdpPe-90gKsbqOrKOJ2xdkLcsDUCaG5RY_LuMY-6BGzcUvD1vHtq7_DMxGFdw4ASoZ4n9OkB63gS9kI8W-acZSZtcTt4Tix-0cs0hHxXvqe58Ayvm3WuNgOy0bOZumn_H3_Um4xbxEsCPsFHCTVynjzIbZ8Ess5-sgtkHCm1tWYNJ7STvQBxwWeJ2aq1ec-VWs0tCGODP4n5ILPzgq_a7pTmdSwIudpEyqP6-InQe6sbIP1R84mrjHsLJzDDVd7kJmK4pceMNsNKZ7Wpo2T1rPAK8TdFnccomM4VmTwdmeojv00o46Li-Wm8Hj6-UyVIhYGilKcpH1p39RC_JJxJjQHUiumQLR0nct2zCCob3DqzWpdiF2xsV4tv5GhKD3spSWls4p9YYgM4Fzkn90IKZ8Q5KIlyM3f0o-KCjjmSlOjuhLeG4uIIA8xhM1Y7Ero7F8r-l0gcnS7v0KGbglVrm_xXDAyF5ic9YyGcfzqrcjf0w5OezcskNd8iH6T2Iz_2qNXFmK8FvsAw=w195-h150-no?authuser=0"
+              alt="test"
+            />
+          </div>
+          <div class="bd-highlight slider-2__2">
+            <p>Giống lúa thuần chất lượng Thiên ưu 8</p>
+          </div>
+
+          <div class="bd-highlight slider-2__3">
+            <a href="#">Thương hiệu giống cây trồng</a>
+          </div>
+        </div>
+        <div class="p-2 bd-highlight slider-2 d-flex flex-column shadow">
+          <div class="bd-highlight slider-2__1">
+            <img
+              src="https://lh3.googleusercontent.com/lRkIatC9eyU5JvAufyuG-lmuZqO_v-NLeROb9nJUQ0JF6jmfWcSJxrxfDAlSvQxOIy9liouE5otByV0KNxJuXGk_yTdI9BTRjH6dfBfEYokzPSgb39y1qOiwBi9_2maC7COgO_vioXGebtjQY97Ue-zKTpXyfGGH-FEnCxGNteiEzX6xdpPe-90gKsbqOrKOJ2xdkLcsDUCaG5RY_LuMY-6BGzcUvD1vHtq7_DMxGFdw4ASoZ4n9OkB63gS9kI8W-acZSZtcTt4Tix-0cs0hHxXvqe58Ayvm3WuNgOy0bOZumn_H3_Um4xbxEsCPsFHCTVynjzIbZ8Ess5-sgtkHCm1tWYNJ7STvQBxwWeJ2aq1ec-VWs0tCGODP4n5ILPzgq_a7pTmdSwIudpEyqP6-InQe6sbIP1R84mrjHsLJzDDVd7kJmK4pceMNsNKZ7Wpo2T1rPAK8TdFnccomM4VmTwdmeojv00o46Li-Wm8Hj6-UyVIhYGilKcpH1p39RC_JJxJjQHUiumQLR0nct2zCCob3DqzWpdiF2xsV4tv5GhKD3spSWls4p9YYgM4Fzkn90IKZ8Q5KIlyM3f0o-KCjjmSlOjuhLeG4uIIA8xhM1Y7Ero7F8r-l0gcnS7v0KGbglVrm_xXDAyF5ic9YyGcfzqrcjf0w5OezcskNd8iH6T2Iz_2qNXFmK8FvsAw=w195-h150-no?authuser=0"
+              alt="test"
+            />
+          </div>
+          <div class="bd-highlight slider-2__2">
+            <p>Giống lúa thuần chất lượng Thiên ưu 8</p>
+          </div>
+
+          <div class="bd-highlight slider-2__3">
+            <a href="#">Thương hiệu giống cây trồng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-light" style="margin-top: 30px !important">
+      <div class="container">
+        <div class="d-flex flex-row bd-highlight">
+          <div class="p-2 bd-highlight w-50">
+            <div class="d-flex flex-column bd-highlight">
+              <div class="p-2 bd-highlight">
+                <p class="fs-5">THÔNG TIN LIÊN LẠC</p>
+              </div>
+              <div class="p-2 bd-highlight">
+                <p>
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+                      /></svg
+                  ></span>
+                  <b> Điện thoại:</b>
+                  <span><a href="#"> (024)-38523294</a></span>
+                </p>
+              </div>
+              <div class="p-2 bd-highlight">
+                <p>
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"
+                      /></svg
+                  ></span>
+                  <b> Email:</b>
+                  <span><a href="#"> nsc@vinaseed.com.vn</a></span>
+                </p>
+              </div>
+              <div class="p-2 bd-highlight">
+                <p>
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3v17h-3.229c-.604 1.396-2.793 4-4.041 4h-11.73v-4h-3v-17h3v-3h16v3h3zm-18 0h14v-2h-14v2zm14 14h-14v6h10.271c1.386 0 1.562-1.885 1.109-2.698.677.186 2.62-.113 2.62-1.531v-1.771zm-11-4v1h2v-1h-2zm2-1v-1h-2v1h2zm1 1v1h2v-1h-2zm2-1v-1h-2v1h2zm1 1v1h2v-1h-2zm2-1v-1h-2v1h2zm3-6h-14v3h14v-3zm-3 12h-8v1h8v-1zm-2 2h-6v1h6v-1z"
+                      /></svg
+                  ></span>
+                  <b> Fax:</b>
+                  <span><a href="#"> (024)-38527996</a></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 bd-highlight w-50">
+            <form action="#">
+              <div class="d-flex flex-column bd-highlight">
+                <div class="p-2 bd-highlight">
+                  <p>ĐĂNG KÝ NHẬN THÔNG TIN</p>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <div class="d-flex flex-row bd-highlight">
+                    <div class="p-2 bd-highlight w-50">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control ip ip-name"
+                          placeholder="Họ và tên"
+                          aria-label="name"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight w-50">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control ip ip-email"
+                          placeholder="Email"
+                          aria-label="email"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 bd-highlight w-100">
+                  <div class="d-flex flex-row bd-highlight">
+                    <div class="p-2 bd-highlight w-40">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control ip ip-phone"
+                          placeholder="Số điện thoại"
+                          aria-label="phone"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight w-50">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control ip ip-product"
+                          placeholder="Sản phẩm quan tâm"
+                          aria-label="name-product"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight w-10">
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-detail w-100"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.42504194643!2d107.24578961433939!3d11.15613215512176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174f503e47f94dd%3A0x92c993a0cbcfc0d1!2sC.P.SEEDS%20VIETNAM%20CO.%2CLTD!5e0!3m2!1sen!2s!4v1613222738322!5m2!1sen!2s"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="d-flex flex-row bd-highlight">
+        <div class="p-2 bd-highlight footer-1">
+          <div
+            class="d-flex flex-column bd-highlight footer-1-wrap d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="p-2 bd-highlight footer-1-wrap__logo-1 shadow d-flex flex-column align-items-center justify-content-center"
+            >
+              <svg
+                height="55px"
+                viewBox="0 -107 512 511"
+                width="55px"
+                fill="#fff"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m255 .5c-7.089844 6.980469-17.34375 18.109375-27.464844 32.742188-8.722656 12.609374-15.832031 25.507812-21.332031 38.640624 19.625 13.980469 36.410156 30.628907 49.792969 49.472657 13.265625-18.675781 29.875-35.199219 49.277344-49.097657-5.753907-13.425781-13.203126-26.582031-22.347657-39.410156-10.328125-14.484375-20.742187-25.46875-27.925781-32.347656zm0 0"
+                />
+                <path
+                  d="m260.324219 296.066406c9.097656-1.484375 23.320312-4.597656 39.359375-11 36.109375-14.414062 64.078125-37.917968 83.128906-69.863281 36.15625-60.632813 24.257812-126.785156 17.144531-153.277344-9.679687 2.296875-24.222656 6.5-40.460937 13.769531-38.035156 17.019532-67.054688 41.976563-86.253906 74.167969-19.046876 31.945313-26.433594 67.722657-21.953126 106.347657 1.992188 17.144531 6.011719 31.136718 9.035157 39.855468zm0 0"
+                />
+                <path
+                  d="m42.199219 139.199219c-17.753907 1.175781-32.570313 4.261719-42.199219 6.757812 2.210938 9.691407 6.292969 24.269531 13.421875 40.570313 16.695313 38.179687 41.398437 67.410156 73.425781 86.882812 25.121094 15.273438 52.992188 23.285156 82.867188 23.871094-27.425782-16.699219-50.015625-39.320312-66.335938-66.691406-16.128906-27.046875-25.714844-58.035156-28.355468-91.132813-10.617188-.898437-21.5625-1-32.824219-.257812zm0 0"
+                />
+                <path
+                  d="m112.042969 61.925781c-2.582031 9.609375-5.792969 24.398438-7.117188 42.140625-3.101562 41.550782 5.058594 78.941406 24.257813 111.136719 19.050781 31.941406 47.019531 55.449219 83.128906 69.863281 5.199219 2.074219 10.1875 3.785156 14.890625 5.226563-2.191406-8.375-4.261719-18.296875-5.613281-29.402344-4.738282-38.941406 1.273437-76.824219 17.402344-110.617187-.082032-.136719-.160157-.273438-.242188-.410157-19.199219-32.195312-48.214844-57.148437-86.25-74.167969-16.238281-7.265624-30.777344-11.472656-40.457031-13.769531zm0 0"
+                />
+                <path
+                  d="m512 145.957031c-9.625-2.496093-24.449219-5.582031-42.207031-6.757812-11.261719-.742188-22.207031-.648438-32.824219.253906-2.640625 33.09375-12.222656 64.089844-28.355469 91.136719-16.320312 27.367187-38.914062 49.992187-66.335937 66.691406 29.878906-.585938 57.753906-8.601562 82.867187-23.871094 60.324219-36.675781 80.75-100.710937 86.855469-127.453125zm0 0"
+                />
+              </svg>
+              <p>Cp Seed</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 bd-highlight w-50">
+          <ul class="list-group">
+            <li class="list-group-item border-0 p-1">
+              <p class="fs-5">TẬP ĐOÀN GIỐNG CÂY TRỒNG VIỆT NAM</p>
+            </li>
+            <li class="list-group-item border-0 p-0">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"
+                    /></svg
+                ></span>
+                <b> Địa chỉ:</b>
+                <span
+                  ><a href="#">
+                    Số 1 Lương Định Của, Phương Mai, Đống Đa, Hà Nội</a
+                  ></span
+                >
+              </p>
+            </li>
+            <li class="list-group-item border-0 p-0">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+                    /></svg
+                ></span>
+                <b> Điện thoại:</b>
+                <span><a href="#"> (024)-38523294</a></span>
+              </p>
+            </li>
+            <li class="list-group-item border-0 p-0">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"
+                    /></svg
+                ></span>
+                <b> Email:</b>
+                <span><a href="#"> nsc@vinaseed.com.vn</a></span>
+              </p>
+            </li>
+            <li class="list-group-item border-0 p-0">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3v17h-3.229c-.604 1.396-2.793 4-4.041 4h-11.73v-4h-3v-17h3v-3h16v3h3zm-18 0h14v-2h-14v2zm14 14h-14v6h10.271c1.386 0 1.562-1.885 1.109-2.698.677.186 2.62-.113 2.62-1.531v-1.771zm-11-4v1h2v-1h-2zm2-1v-1h-2v1h2zm1 1v1h2v-1h-2zm2-1v-1h-2v1h2zm1 1v1h2v-1h-2zm2-1v-1h-2v1h2zm3-6h-14v3h14v-3zm-3 12h-8v1h8v-1zm-2 2h-6v1h6v-1z"
+                    /></svg
+                ></span>
+                <b> Fax:</b>
+                <span><a href="#"> (024)-38527996</a></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="p-2 bd-highlight">
+          <div class="d-flex flex-column bd-highlight">
+            <div class="bd-highlight">
+              <div class="d-flex flex-row bd-highlight">
+                <div class="p-2 bd-highlight">
+                  <a class="btn-social-fb" href="#" role="button"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                      /></svg
+                  ></a>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <a class="btn-social-yt"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                      /></svg
+                  ></a>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <a
+                    class="circle d-flex justify-content-center align-items-center"
+                    href="#"
+                    ><span>Zalo</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="p-2 bd-highlight">© 2021 Cpseed.com.vn</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("ul.sf-menu").superfish();
+      });
+    </script>
+    <script src="../../superfish/js/superfish.js"></script>
+    <!-- Initialize Swiper -->
+    <!-- Initialize Swiper -->
+    <script>
+      var galleryThumbs = new Swiper(".gallery-thumbs", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        loop: true,
+        freeMode: true,
+        loopedSlides: 5, //looped slides should be the same
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var galleryTop = new Swiper(".gallery-top", {
+        spaceBetween: 10,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+      });
+    </script>
+  </body>
+</html>

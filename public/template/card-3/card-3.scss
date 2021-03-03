@@ -1,0 +1,308 @@
+.title-2 {
+  font-size: 18px;
+  color: #219653;
+  font-weight: 600;
+
+  width: 20%;
+  height: 40px;
+  position: absolute;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 20%;
+    height: 2px;
+    background: #c4c4c4;
+  }
+}
+
+.card-3 {
+  width: 1150px;
+  height: 500px;
+  transition: all 0.1s linear;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  &:hover &__left &__left-img img {
+    transform: scale(1.25);
+  }
+  &__number {
+    font-size: 150px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: 2;
+  }
+  &__left {
+    width: 60%;
+    height: 100%;
+    position: relative;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+
+        transform: scale(1);
+        transition: all 0.3s linear;
+      }
+      .card-3__left-layer {
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.2;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__right {
+    width: 40%;
+    height: 100%;
+
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #219653;
+    }
+    &-des {
+      & .hidden {
+        width: 100%;
+        height: 110px;
+        padding: 10px 10px 10px 0;
+        overflow: hidden;
+
+        margin-bottom: 30px;
+      }
+
+      & .show-more {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+
+        cursor: pointer;
+        color: green;
+
+        & svg {
+          margin-left: 10px;
+          fill: green;
+          width: 11px;
+          height: 11px;
+        }
+      }
+    }
+  }
+}
+
+.open {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+
+  &__left {
+    width: 25%;
+    padding: 8px 16px;
+    position: relative;
+
+    &-title {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      margin-bottom: 10px !important;
+      margin-left: 11px;
+    }
+    &-menu {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+    }
+
+    &-divider {
+      width: 90%;
+      height: 3px;
+      margin: 0 auto;
+      background: #f3f3f3;
+
+      margin-bottom: 10px;
+    }
+  }
+  &__right {
+    width: 75%;
+    padding-left: 55px;
+
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+      position: relative;
+      color: #219653;
+
+      text-transform: uppercase;
+      margin-bottom: 30px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+
+        width: 20%;
+        height: 2px;
+        background: #c4c4c4;
+      }
+    }
+  }
+}
+
+.panel-heading {
+  & a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+
+    margin-bottom: 15px;
+  }
+}
+
+.panel-title {
+  width: 90%;
+  height: 50px;
+  padding: 5px 24px;
+  background: #f3f3f3;
+
+  margin: 0 auto;
+
+  & a svg {
+    float: right;
+    margin-top: 15px;
+    width: 11px;
+    height: 11px;
+  }
+}
+
+.panel-body {
+  & ul {
+    list-style: none;
+    margin-left: 19px;
+  }
+  & ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: black; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  & ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+  }
+}
+
+.panel-group {
+  margin-bottom: 50px !important;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//footer
+.footer-container-fluid {
+  height: 60vh;
+  background: #f3f3f3;
+  padding-top: 50px;
+}
+
+.my-list-item p {
+  text-transform: lowercase;
+  font-size: 13px;
+  padding: 8px 16px;
+  background: transparent !important;
+  margin-bottom: 0 !important;
+  color: black;
+}
+.my-list-item p span {
+  margin-right: 15px;
+}
+.my-list-item:hover {
+  text-decoration: underline;
+}
+
+.list-active p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent !important;
+}
+
+.list-group-item {
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  &:hover {
+    background: #fff !important;
+  }
+}
+
+.my-list-group {
+  padding: 0 20px !important;
+  margin-top: 20px !important;
+}
+
+.footer-domain {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 300;
+  margin-right: 50px;
+}
+
+.logo-footer {
+  background: #fff;
+  height: 80%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  & img {
+    margin-top: 50% !important;
+  }
+}
+
+.btn-map {
+  width: 500px;
+  border: 1px black solid;
+  background-color: #fff;
+  font-size: 13px;
+  padding: 16px 0 !important;
+}
+
+.map-modal-content {
+  width: 1100px !important;
+  height: 600px !important;
+}
+
+.map-modal-dialog {
+  position: absolute !important;
+  top: 45% !important;
+  left: 30% !important;
+
+  transform: translate(-50%, -50%) !important;
+}

@@ -1,0 +1,48 @@
+$orange: #cc5500;
+$green: #219653;
+$gray: #bdc3c7;
+$blue: #2c3e50;
+$white: #fff;
+
+.card-2 {
+  width: 300px;
+  height: 300px;
+
+  padding: 8px 8px 16px 8px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  &:hover &__title {
+    font-size: 15px;
+  }
+
+  &:hover &__wrapper-img img {
+    transform: scale(1.25);
+  }
+
+  &__wrapper-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      transition: all 0.4s linear;
+    }
+  }
+  &__title {
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+
+    margin-top: 15px;
+    transition: all 0.4s linear;
+  }
+}

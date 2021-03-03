@@ -1,0 +1,150 @@
+// modal
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-content {
+  min-height: 500px !important;
+  border: none;
+}
+
+.modal-dialog {
+  max-width: 1000px !important;
+}
+// end modal
+
+.slider-1 {
+  width: 290px !important;
+  height: 185px !important;
+  margin-top: 25px;
+  margin-left: 0 !important;
+  margin-right: 15px !important;
+  position: relative;
+
+  &:hover &__1 {
+    z-index: -1;
+  }
+
+  &:hover .slider-1-btn {
+    color: green;
+  }
+  &__1 {
+    width: 290px !important;
+    height: 185px !important;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    & img {
+      width: 200px !important;
+      height: 127px !important;
+    }
+  }
+  &__3 {
+    width: 290px !important;
+    height: 185px !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    & .slider-1-btn {
+      width: 290px !important;
+      height: 185px !important;
+      background-color: #fff;
+      color: #fff;
+
+      font-size: 16px;
+      font-weight: 600;
+      border: none !important;
+      border-radius: 0 !important;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+.slider-2 {
+  width: 195px !important;
+  height: 150px !important;
+  margin-top: 25px;
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+  position: relative;
+
+  &:hover &__3 {
+    display: block !important;
+  }
+  &:hover &__2 {
+    z-index: -1;
+  }
+  &__1 {
+    width: 195px !important;
+    height: 150px !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &__2 {
+    width: 195px !important;
+    height: fit-content;
+    text-align: left;
+    color: #fff;
+    padding-left: 15px;
+    background: rgba($color: #789a3d, $alpha: 0.6);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    & p {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+    }
+  }
+  &__3 {
+    width: 100% !important;
+    height: 151px !important;
+    text-align: center;
+    background: rgba($color: #fff, $alpha: 0.9);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    & a {
+      text-decoration: none;
+      color: #789a3d;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 50px;
+    }
+    &:hover a {
+      font-weight: 600;
+    }
+  }
+}
+
+.swiper-slide-1 {
+  width: 290px !important;
+  height: 185px !important;
+  margin-right: 16px !important;
+}
+.swiper-wrapper {
+  height: 250px !important;
+}
+
+.swiper-button-next-bus,
+.swiper-button-prev-bus {
+  color: black !important;
+}
+
+.swiper-button-next-bus:after,
+.swiper-button-prev-bus:after {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+}
+
+

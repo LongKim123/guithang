@@ -1,0 +1,85 @@
+.card-2 {
+  width: 300px;
+  height: 300px;
+
+  margin-top: 50px;
+  margin-left: 100px;
+
+  padding: 8px 8px 16px 8px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+
+  &:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  &:hover &__title {
+    color: green;
+  }
+
+  &:hover &__wrapper-img img {
+    transform: scale(1.25);
+  }
+
+  &__wrapper-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      transition: all 0.4s linear;
+    }
+  }
+  &__title {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+
+    margin-top: 15px;
+    margin-left: 65px;
+    transition: all 0.4s linear;
+
+    background: none;
+    border: none;
+    &:hover {
+      background: none;
+      text-decoration: underline;
+    }
+  }
+}
+.partner-modal-title {
+  color: #219653 !important;
+  font-weight: 600;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+
+    width: 100px;
+    height: 2px;
+    background: #219653;
+  }
+}
+
+.partner-modal-content {
+  width: 800px !important;
+  height: auto !important;
+}
+
+.partner-modal-dialog {
+  float: left;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.partner-modal-header {
+  border-bottom: none !important;
+}
